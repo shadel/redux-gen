@@ -1,7 +1,8 @@
 {
     "version": "1.5.0-alpha",
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
+        "lib": ["es2015", "es2017", "dom"],
         "module": "commonjs",
         "noImplicitAny": false,
         "removeComments": true,
@@ -16,8 +17,6 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./deep/deeper/bar.ts",
-        "./deep/foo.ts",
         "./index.ts",
         "./typings/node/node.d.ts",
         "./typings/tsd.d.ts"
