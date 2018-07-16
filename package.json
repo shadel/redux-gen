@@ -6,7 +6,8 @@
   "typings": "js/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "sample": "webpack --config webpack.sample.config.js --mode=development"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,24 @@
   },
   "homepage": "https://github.com/basarat/ts-npm-module#readme",
   "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-redux": "^6.0.4",
     "core-js": "^2.5.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
     "redux": "^4.0.0",
+    "serve": "^9.2.0",
     "ts-loader": "^4.4.2",
     "typescript": "^2.9.2",
     "webpack": "^4.16.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack-cli": "^3.0.8"
   }
 }

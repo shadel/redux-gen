@@ -52,8 +52,8 @@ export type ActionMap<T extends any>  = {
 
 
 const createIAction = <T extends any, K extends keyof T>(key: K, obj: T): IAction<T, K> => ({
-    create: genActionCreator(obj[key], Object.assign(obj, key, TypeMethod.CREATE)),
-    update: genActionCreator(obj[key], Object.assign(obj, key, TypeMethod.UPDATE)),
+    create: genActionCreator(obj[key], Object.assign({}, obj, key, TypeMethod.CREATE)),
+    update: genActionCreator(obj[key], Object.assign({}, obj, key, TypeMethod.UPDATE)),
     map: actionMapCreator(obj[key])
 }) 
 
