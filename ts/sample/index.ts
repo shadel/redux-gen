@@ -1,4 +1,4 @@
-import reduxGen, { UniqueType, TypeMethod } from '../src/reduxGen';
+import reduxGen from '../src/reduxGen';
 import {Action, Dispatch} from 'redux';
 
 
